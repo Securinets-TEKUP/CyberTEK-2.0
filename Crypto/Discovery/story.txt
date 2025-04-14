@@ -1,0 +1,12 @@
+Challenge: Discovery
+
+We’ve discovered the following files in one of the most wanted criminals !
+The cyber space is no longer secure after the attacks of Bob Thomas !
+Help us recover the hackers private key and secret messages
+
+Can you recover the private key and uncover the original flag?
+
+Format: Securinets{plain_text_private_key}
+
+
+author: cybereagle2001
