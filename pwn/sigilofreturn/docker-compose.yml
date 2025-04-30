@@ -1,0 +1,16 @@
+services:
+    sigilofreturn:
+        build: .
+        ports:
+            - 1337:5000
+        read_only : true
+        privileged: true
+        cap_drop:
+            - all
+        restart: on-failure
+
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.2'
+                    memory: 1000M
