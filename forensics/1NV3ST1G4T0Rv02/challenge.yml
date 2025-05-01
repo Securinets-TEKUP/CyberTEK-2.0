@@ -1,0 +1,19 @@
+name: "1NV3ST1G4T0Rv0.2"
+author: "cybereagle2001"
+category: forensics
+description: |-
+  The british captured a LATINO spy and while searching his room they identified a futuristic device, using what they have in hand they dumped System files from the disk image, as a forensics engineer help them collect as much data as possible !
+
+  File - https://download.ru/files/n4rTUnDz
+     
+  **author**: cybereagle2001
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - Securinets{M0B1L3_1s_S0_1NTr3s3T1NG!}
+state: visible
+version: "0.1"

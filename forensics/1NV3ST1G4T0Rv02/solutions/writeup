@@ -1,0 +1,133 @@
+1) The spy is using patterns to secure the system, unlock the phone !
+
+> python3 androidpatterndecode.py -g /mnt/d/autopsy/CyberTEK/Export/SYS/android-9.0-r2/data/system/users/0/gesture.key -d res/androidpatternsha1.txt
+
+flag: 12569
+
+2) The spy had our secret base location, he didn't say how he received it !
+recover the broken file and get the GPS location !
+
+> using hexeditor change the chunks to : 89 50 4E 47
+
+the path : android-9.0-r2/data/media/0/Pictures
+
+Flag: -51.50310107537177_-58.994881776473875
+
+3) It's impossible that he has identified our location alone !
+Who told him ?
+
+> data/user_de/0/com.android.providers.telephony/databases/mmssms.db
+
+flag: Roberta Aizenberg
+
+4) Identify how many SIM the SPY has and which Service Provider is compromised!
+
+> sqlite3 data/user_de/0/com.android.providers.telephony/databases/telephony.db
+> select * from siminfo;
+
+flag: 2_Movistar
+
+
+5) where did he meet his Handler? (geolocation,name)
+
+> sqlite3 data/user_de/0/com.google.android.gms/databases/herrevad.db
+
+flag : -51.79561607045942,-58.94036530322086,Argentine Military Cemetery
+
+6) The handler is smart, find the hidden message that the spy detects each time he recieves a call ?
+
+> sqlite3 data/data/com.android.providers.contacts/databases/contacts2.db
+>> select * from contacts;
+Roberta has specific custom_ringtone ! -> MAL_Music
+
+go to /data/media/0/Ringtones/MAL_Music
+
+open with audacity -> spectrum
+
+flag: USE_The_Secret_APP
+
+
+7) What is the md5 of the malicious APP
+
+md5sum data/app/com.android.share-KRUGS427NFZV6VDIMVPW233NMVXHI===/base.apk
+
+flag: db01f96d5e66d82f7eb61b85eb96ef6e
+
+8) What is the name of the malware ?
+
+flag: dendroid
+
+9 ) when it was firstly submitted to the community as malware?
+VIRUS TOTAL
+flag: 2013-12-20 21:13:14 UTC
+
+
+10) What are the top 7 malicious permissions of the app?
+
+Virus TOTAL
+
+
+11) the application is shared on a famous forum ! flag format: forum.domain_sample.id
+
+https://virus.exchange/samples/4496147
+
+flag: virus.exchange_4496147
+
+
+12) let's dive deeper into analysis! what's the serial number of the APK signature certificate :
+
+use jadx-gui to start analysis
+
+flag: 0x52802812
+
+
+13) The malware communicates with Android's internal telephony service. What is the full name of the AIDL interface used to perform remote call control?
+
+go to com.android.internal.telephony -> ITelephony -> check imported packages
+
+flag: com.android.internal.telephony.ITelephony
+
+14 ) There is a method used in the application to show advanced surveillance and specific locations! name it
+
+just read the ITelphony code
+
+flag: getNeighboringCellInfo
+
+15) What Hidden permission is required to use ITelephony interface
+
+based on android documentation
+
+flag: android.permission.MODIFY_PHONE_STATE
+
+16) The malicious application is communicating with a C2 server what interface is used to communicate with the remote server
+
+check the imported libraries and interfaces on the Dialog under connect under telephony
+
+flag: org.apache.http.client.HttpClient
+
+17) What encoding method is used to hide the C2 URL before it is stored?
+
+just reading the code of the Dialog will answer the question
+
+flag: base64
+
+18) What unique identifier of the victim device is appended to the C2 request
+
+line 29 in Dialog code
+
+flag: AndroidID
+
+================
+ALL the rest needs analysis of the MyServices
+
+19) What remote command enables or disables call recording
+
+flag: recordcalls
+
+20) What remote command allows the attacker to block incoming SMS?
+
+flag: blocksms
+
+21) what is the url and the password of the C2 servser
+
+flag: http://pizzachip.com/rat_keylimepie
