@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ "Retro Styles are back" }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💾 80's Styles Are Back</h1>
+        {% if session.get('user') %}
+            <div class="nav">
+                Your logged in token is <b>{{ session['token'] }}</b> |
+                <a href="/">Home</a> |
+                <a href="/gallery">Gallery</a> |
+                <a href="/flag">Flag</a> |
+                <a href="/logout">Logout</a>
+            </div>
+        {% else %}
+            <div class="nav">
+                <a href="/login">Login</a>
+            </div>
+        {% endif %}
+        <hr>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

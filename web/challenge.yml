@@ -1,0 +1,22 @@
+name: "Vroom"
+author: "xhalyl"
+category: web
+description: |-
+  Wishing you clear skies and a smooth ride
+
+  Please solve the challenge locally first!
+  **author**: "xhalyl"
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{__R4C3_ME_1F_Y0U_C4N}
+#tags:
+#  - easy
+files:
+  - handout/challenge.zip
+state: visible
+version: "0.1"
