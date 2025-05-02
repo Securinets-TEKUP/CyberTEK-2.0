@@ -1,0 +1,22 @@
+name: "ezRSA"
+author: "Mrx0rd"
+category: crypto
+description: |-
+    "Cracking keys one modulo at a time (no fancy quantum computers required)!"
+    
+
+     **author**: Mrx0rd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{diff1cult_rsa_1s_e@sy_xxxxxxxxxxxxxxxxxx}
+#tags:
+#  - easy
+files:
+   - handout/ezRSA+.py
+state: visible
+version: "0.1"

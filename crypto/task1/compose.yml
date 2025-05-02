@@ -1,0 +1,13 @@
+version: '3'
+services:
+  challenge:
+    container_name: syb3lik crypto
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - 11002:1337
+    read_only: true
+    cap_drop:
+      - all
+    restart: on-failure

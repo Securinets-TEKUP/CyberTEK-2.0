@@ -1,0 +1,22 @@
+name: "hash101"
+author: "Mrx0rd"
+category: crypto
+description: |-
+    "why settle for a standard hash when you can make your own mystery?"
+    
+
+     **author**: Mrx0rd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{h4sh3d_w1th_l0v3_and_0ff_by_0ne_err0rs}
+#tags:
+#  - easy
+files:
+   - handout/hash101.py
+state: visible
+version: "0.1"

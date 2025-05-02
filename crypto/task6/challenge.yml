@@ -1,0 +1,22 @@
+name: "BB84"
+author: "Mrx0rd"
+category: crypto
+description: |-
+    "The challenge's server implements (a slightly modified version of) BB84, which is a simple algorithm to allow two entities to share a secret key."
+    
+
+     **author**: Mrx0rd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{QKD_zzzzzzzzzzzzzzzzzzMrx0rd}
+#tags:
+#  - easy
+files:
+   - handout/ezMATH.py
+state: visible
+version: "0.1"
