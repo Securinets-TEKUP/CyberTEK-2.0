@@ -1,0 +1,17 @@
+name: "FOG"
+author: "cybereagle2001"
+category: forensics
+description: |-
+  This one is really easy and classic go ahead and solve it
+
+  **author**: cybereagle2001
+value: 500
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  -  Securinets{No1sy_Netw0rk}
+state: visible
+version: "0.1"
