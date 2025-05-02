@@ -8,7 +8,7 @@ description: |-
 value: 500
 type: dynamic
 extra:
-  initial: 500
+  initial: 400
   decay: 20
   minimum: 100
 flags:
