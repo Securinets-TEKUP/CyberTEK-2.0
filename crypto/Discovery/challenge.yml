@@ -1,15 +1,15 @@
 name: "Discovery"
 author: "cybereagle2001"
-category: Crypto
+category: crypto
 description: |-
     We’ve discovered the following files in one of the most wanted criminals !
-The cyber space is no longer secure after the attacks of Bob Thomas !
-Help us recover the hackers private key and secret messages
+    The cyber space is no longer secure after the attacks of Bob Thomas !
+    Help us recover the hackers private key and secret messages
 
-Can you recover the private key and uncover the original flag?
+    Can you recover the private key and uncover the original flag?
 
-Flag Format Securinets{plain_text_private_key} 
-  **author**: cybereagle2001
+    Flag Format Securinets{plain_text_private_key} 
+    **author**: cybereagle2001
 value: 500
 type: dynamic
 extra:
@@ -18,5 +18,7 @@ extra:
   minimum: 100
 flags:
   - Securinets{3CC_1s_Br0k3n_54557082544614123842088576588847111891417741407876865337994383802864000837462}
+files:
+  - handout/challenge.zip
 state: visible
 version: "0.1"
