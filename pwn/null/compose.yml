@@ -1,0 +1,9 @@
+services:
+  challenge:
+    container_name: "null"
+    privileged: true
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "12005:1333"

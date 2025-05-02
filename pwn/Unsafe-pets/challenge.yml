@@ -1,0 +1,22 @@
+name: "Unsafe-pets"
+author: "hyzr"
+category: pwn
+description: |-
+  Welcome to Happy Paws — only those trying to make pets safe again are allowed in... as far as I know.
+  nc 51.77.140.155 12001
+  **author**: hyzr
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - "Securinets{5ad_5c00by_D00_Thought_YOU_G00nna_Help}"
+tags:
+  - medium
+files:
+  - handout/main
+  - handout/libc.so.6
+  - handout/ld-linux-x86-64.so.2
+state: visible

@@ -1,0 +1,9 @@
+services:
+  challenge:
+    container_name: Unsafe_pets
+    privileged: true
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "12001:1333"
