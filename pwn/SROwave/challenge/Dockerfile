@@ -9,5 +9,4 @@ COPY flag.txt /srv/app/
 
 RUN chmod +x /srv/app/run
 
-RUN rm -f /bin/sh /bin/bash /bin/dash /bin/zsh /usr/bin/sh /usr/bin/bash /usr/bin/dash /usr/bin/zsh /bin/ash /usr/bin/ash
 

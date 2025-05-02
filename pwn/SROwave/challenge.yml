@@ -1,0 +1,25 @@
+name: "SROwave"
+author: "BALD"
+category: pwn
+description: |-
+  a special retrowave 
+
+  nc 51.77.140.155 10002
+
+  **author**: BALD
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{SR0p_1S_C00l}
+#tags:
+#  - easy
+files:
+  - handout/handout.rar
+state: visible
+#requirements:
+#  - MyBankv2
+version: "0.1"
