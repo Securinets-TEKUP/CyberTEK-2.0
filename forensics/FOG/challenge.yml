@@ -8,9 +8,9 @@ description: |-
 value: 500
 type: dynamic
 extra:
-  initial: 400
+  initial: 200
   decay: 20
-  minimum: 100
+  minimum: 50
 flags:
   -  Securinets{No1sy_Netw0rk}
 state: visible
