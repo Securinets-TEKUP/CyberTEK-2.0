@@ -1,0 +1,21 @@
+name: "BBSqli"
+author: "xhalyl"
+category: web
+description: |-
+  I think BB stands for Big Boy
+
+  **author**: "xhalyl"
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{__BASIC_SQL_1NJ3ECT10N}
+#tags:
+#  - easy
+files:
+  - handout/challenge.zip
+state: visible
+version: "0.1"

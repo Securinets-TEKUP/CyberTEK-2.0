@@ -1,0 +1,15 @@
+version: '3'
+services:
+  challenge-web-bigboysqli:
+    build:
+      context: challenge
+      dockerfile: Dockerfile
+    ports:
+      - "7009:5000"
+    privileged: false
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2000M
