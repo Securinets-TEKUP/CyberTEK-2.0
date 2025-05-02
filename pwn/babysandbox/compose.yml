@@ -1,0 +1,9 @@
+services:
+  challenge:
+    container_name: babysandbox
+    privileged: true
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "12002:1333"

@@ -1,0 +1,20 @@
+name: "babysandbox"
+author: "hyzr"
+category: pwn
+description: |-
+  Baby sandbox. Big regrets
+  nc 51.77.140.155 12002
+  **author**: hyzr
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - "Securinets{3e299c7914cee8be389036792c3d8a40536de5fffdba33bb9fcffe3c}"
+tags:
+  - easy
+files:
+  - handout/main
+state: visible
