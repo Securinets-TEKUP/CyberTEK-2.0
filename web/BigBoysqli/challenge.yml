@@ -4,6 +4,8 @@ category: web
 description: |-
   I think BB stands for Big Boy
 
+  Link : https://bbsqli.tekup-securinets.tech
+
   **author**: "xhalyl"
 value: 500
 type: dynamic
@@ -12,7 +14,7 @@ extra:
   decay: 20
   minimum: 10
 flags:
-  - Securinets{__BASIC_SQL_1NJ3ECT10N}
+  - Securinets{__V3RY_BASIC_SQL_1NJ3ECT10N}
 #tags:
 #  - easy
 files:
