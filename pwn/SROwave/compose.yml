@@ -6,7 +6,7 @@ services:
       context: ./main
       dockerfile: Dockerfile
     ports:
-      - 5000:10001
+      - 12444:10001
     read_only: true
     cap_drop:
       - all
