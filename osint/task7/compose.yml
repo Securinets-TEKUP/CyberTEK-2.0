@@ -1,0 +1,16 @@
+
+version: '3'
+services:
+  challenge-osint-web:
+    build:
+      context: challenge
+      dockerfile: Dockerfile
+    ports:
+      - "15001:80"
+    privileged: false
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2000M

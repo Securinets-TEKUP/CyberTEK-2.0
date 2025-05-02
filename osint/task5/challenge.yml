@@ -1,0 +1,27 @@
+name: "The Gotham Conspiracy 4"
+author: "SH3GO"
+category: osint
+description: |-
+    
+    Among the files recovered from the drive, one image stands out—an old photo, seemingly harmless.
+    But you’ve learned by now: nothing she leaves behind is without purpose.
+    It’s not the photo that matters.
+    It’s where it was taken.
+    Hidden deep beneath the surface, a strange code pulses—something she didn’t erase. Or maybe… she wanted it found.
+    A place tied to Harley.
+    A location once whispered about, never confirmed.
+    Her hideout? Or just another breadcrumb?
+
+    Flag: Securinets{City_Street}
+
+
+    **author**: SH3G0
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{Chicago_LaSalle}
+

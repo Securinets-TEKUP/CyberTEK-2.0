@@ -1,0 +1,24 @@
+name: "The Gotham Conspiracy 0"
+author: "SH3G0"
+category: osint
+description: |-
+    Gotham is restless. Sirens echo. Screens flicker with headlines: "The Joker... Gone?" 
+    No bodies. No notes. Just a lingering laugh caught in the wind.
+    But this isn’t one of his usual games. Something’s off. And the only clue left behind? A single image file—sent anonymously.
+    Some say it’s just a photo. But the Joker always hid his secrets behind a smile.
+    Maybe that’s your first clue...
+
+
+    **author**: SH3G0
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{h1dd3n_1n_pl41n_s1ght}
+files:
+  - handout/last_pic.png 
+state: visible
+version: "0.1"
