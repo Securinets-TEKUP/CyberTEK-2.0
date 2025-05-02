@@ -1,0 +1,29 @@
+name: "The Gotham Conspiracy 6"
+author: "SH3G0"
+category: osint
+description: |-
+    
+    The flight was real. So was the escape.
+    But while tracing the aircraft, something didn’t sit right. Why leave such an obvious trail? Why now?
+    Then, tucked away in the corrupted files from the drive, you find this. A page masquerading as an error. A file that shouldn't exist.
+    It doesn’t scream for attention—it waits. A whisper buried in code. And when you uncover it, the game changes.
+    Because this isn't about Joker. It never was.
+    It’s a letter. From her. Her final truth. And the one who helped her—unknowingly or not—will finally be revealed.
+    Read carefully. The name is there. So is the motive.
+
+    Link
+
+    Flag: Securinets{Name_Motive}
+
+
+    **author**: SH3G0
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{Robin_Recognition}
+state: visible
+version: "0.1"

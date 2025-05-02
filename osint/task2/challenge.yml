@@ -1,0 +1,29 @@
+name: "The Gotham Conspiracy 1"
+author: "SH3G0"
+category: osint
+description: |-
+    
+    You thought the trail ended with that video.
+    But as the static clears, one lone comment stares back at you—simple, out of place.
+    A name you don’t recognize.
+    It doesn’t belong there… and yet, it feels intentional.
+    The Joker always had followers. Admirers. Puppets. But this one’s different. 
+    This name shows up in places it shouldn’t. Again and again. Someone’s watching. Or maybe… guiding.
+    They say true identities are hard to hide on the internet.
+    Start with the name. Follow the echoes.
+
+
+    Flag: Securinets{First_Last_Name}
+
+
+    **author**: SH3G0
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{Harleen_Frances_Quinzel}
+
+

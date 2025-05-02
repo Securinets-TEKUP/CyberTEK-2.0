@@ -1,0 +1,33 @@
+name: "The Gotham Conspiracy 5"
+author: "SH3G0"
+category: osint
+description: |-
+    
+    The location from the photo led you somewhere real—an abandoned lot, scorched walls, and a single charred locker tucked beneath rubble. 
+    Inside it, sealed in a plastic sleeve, was something unexpected:
+    A crumpled boarding pass.This wasn’t just a ticket. It was part of her escape. Maybe even a final message.
+    One number on it stands out. Not a seat. Not a gate.
+    Something traceable. Something real.
+    She didn’t run without leaving clues.
+    She wanted you to follow.
+
+    Track the trail she left in the sky.
+    Find where it ends.
+
+    Flag: Securinets{Aircraft_First-Flight-Date}
+
+
+    **author**: SH3G0
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{Boeing_747_01-02-1992}
+
+files:
+  - handout/oneway_out.png 
+state: visible
+version: "0.1"

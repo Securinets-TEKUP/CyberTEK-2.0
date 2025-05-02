@@ -1,0 +1,30 @@
+name: "The Gotham Conspiracy 3"
+author: "SH3G0"
+category: osint
+description: |-
+    
+    While searching through the remains of the Joker’s last known hideout, you stumble across a half-burned hard drive—cracked, chaotic, and smeared with lipstick.
+    Just one word is scrawled on a sticky note stuck to the side:
+    “He left pieces behind. I turned them into games,enjoy...”
+    At first, it looks like corrupted junk. But inside, something waits.
+    A folder. Locked tight.
+    Files wrapped in layers of puzzles—each more twisted than the last.
+    Every file you open, every code you break, brings you closer to the truth she wants you to see.
+
+    Flag: Securinets{firstpassword_second_third}
+
+
+    **author**: SH3G0
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{LAUGH_PLAYTIME_CHAOS}
+
+files:
+  - handout/whos_laughing_now.zip 
+state: visible
+version: "0.1"

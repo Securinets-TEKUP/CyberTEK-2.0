@@ -1,0 +1,24 @@
+name: "The Gotham Conspiracy 2"
+author: "SH3G0"
+category: osint
+description: |-
+    
+    A story was hidden in plain sight—tucked between filtered photos and manic smiles. 
+    But one frame stood out: a single link, quietly waiting.
+    It leads nowhere. At least… not anymore.
+    But whispers have a way of lingering, even after the source is scrubbed clean.
+    What you're looking for isn’t just what was said—but when it was said. The moment matters.
+
+    Flag: Securinets{mm_dd_yyyy_hh_min}
+
+
+    **author**: SH3GO
+value: 200
+type: dynamic
+extra:
+  initial: 200
+  decay: 20
+  minimum: 50
+flags:
+  - Securinets{10_31_2023_23_45}
+
