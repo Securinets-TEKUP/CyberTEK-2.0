@@ -1,0 +1,23 @@
+name: "need help"
+author: "Glitch."
+category: Forensic
+description: |-
+My friend has been kidnapped, and I desperately need your help to locate them. 📍 
+Please assist in finding their whereabouts and determining the ransom amount the kidnappers are demanding.
+⏳ Time is critical—any support you can provide would mean the world. 🙏
+  flag format : Securinets{price,place}
+  **author**: "Glitch."
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{987.123,tek-up}
+#tags:
+#  - easy
+files:
+  - handout/jsp.pcapng
+state: visible
+version: "0.1"
