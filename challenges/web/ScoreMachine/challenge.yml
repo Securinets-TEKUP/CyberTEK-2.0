@@ -4,7 +4,7 @@ category: web
 description: |-
   SO Classic !
 
-  link : https://tekup-securinets.tech:5000
+  link : https://coinmachine.tekup-securinets.tech
   
   **author**: KonaN
 value: 500
@@ -14,7 +14,7 @@ extra:
   decay: 20
   minimum: 10
 flags:
-  - Securinets{R_markd0wn_1s_s0_Unsecure_1t's_0nly_4_0ut_0f_10}LI}
+  - Securinets{R_markd0wn_1s_s0_Unsecure_1t's_0nly_4_0ut_0f_10}
 files:
   - handout/app.rar
 state: visible
