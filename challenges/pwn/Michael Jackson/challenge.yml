@@ -2,7 +2,7 @@ name: "Michael Jackson"
 author: "BALD"
 category: pwn
 description: |-
-  Hee Hee 
+  Hee Hee
 
   nc 51.77.140.155 10002
 
@@ -10,15 +10,15 @@ description: |-
 value: 500
 type: dynamic
 extra:
-  initial: 500
+  initial: 200
   decay: 20
-  minimum: 10
+  minimum: 50
 flags:
   - Securinets{sm00th_cr1m1n4l}
 #tags:
 #  - easy
 files:
-  - handout/handout.rar
+  - handout/main
 state: visible
 #requirements:
 #  - MyBankv2

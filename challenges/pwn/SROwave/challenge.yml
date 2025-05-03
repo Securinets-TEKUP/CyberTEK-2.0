@@ -18,7 +18,7 @@ flags:
 #tags:
 #  - easy
 files:
-  - handout/handout.rar
+  - handout/main
 state: visible
 #requirements:
 #  - MyBankv2
