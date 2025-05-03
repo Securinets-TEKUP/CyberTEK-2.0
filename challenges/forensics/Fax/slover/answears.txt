@@ -1,0 +1,11 @@
+whats the attackers ip @ :10.1.31.101
+whats the attacker mac @ : 00:08:02:1c:47:ae
+the username found : director@igakuin.com
+the password found : Global786@
+whats the protocol used for data exfil : smtp 
+whats the mail transfer agent used : postfix 
+whats the data being stealed : coockies 
+in what format their being encoded : base64 
+give me the  sha256 for the coockies : 8f2523b1647d856ca732072c036582b253bcc1e1f5dfaac5658bbbdeeed1316b
+whats the expiry value for the host .reddit.com : 13382914235858980
+Securinets{Y0u_4r3_7oo_0ld_aNd_5m4rt}

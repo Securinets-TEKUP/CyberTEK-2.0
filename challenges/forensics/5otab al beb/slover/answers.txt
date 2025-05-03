@@ -1,0 +1,9 @@
+whats the victim ip @ : 172.16.1.84
+whats the victim mac @ : 00:28:f8:df:77:b4
+whats the attacker ip @ :91.222.173.186
+whats the attacker mac @ :00:26:ca:1b:74:3f
+whats the malicious hostname: flexiblemaria.com
+provide the md5 of the powershell script: 974baa3b6dea92e9d1a8ffe4f69742d5 
+whats the executable name : Autoit3.exe
+whats the malware name : darkgate
+Securinets{Wh4t_4_6olD3n_Era!}
