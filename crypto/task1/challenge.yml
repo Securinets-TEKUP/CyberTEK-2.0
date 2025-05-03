@@ -1,0 +1,21 @@
+name: "syb3lik"
+author: "Mrx0rd"
+category: crypto
+description: |-
+
+
+   **author**: Mrx0rd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{D0ubl2_Tr0ubl201574944849498474}
+#tags:
+#  - easy
+files:
+   - handout/syb3lik.py
+state: visible
+version: "0.1"

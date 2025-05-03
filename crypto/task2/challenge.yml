@@ -1,0 +1,22 @@
+name: "ezRSA"
+author: "Mrx0rd"
+category: crypto
+description: |-
+    "ezRSA: Where 'easy' is the first step to overconfidence."
+    
+
+     **author**: Mrx0rd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{~:L1n34r_Pr1m3E_114!!!!!}
+#tags:
+#  - easy
+files:
+   - handout/ezRSA.py
+state: visible
+version: "0.1"

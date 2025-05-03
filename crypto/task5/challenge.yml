@@ -1,0 +1,22 @@
+name: "ezMATH"
+author: "Mrx0rd"
+category: crypto
+description: |-
+    "no more math plz just give me the flag...!!!!"
+    
+
+     **author**: Mrx0rd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{n0_m0r3_m4th_plz_just_g1v3_m3_th3_fl4g}
+#tags:
+#  - easy
+files:
+   - handout/ezMATH.py
+state: visible
+version: "0.1"
