@@ -1,0 +1,10 @@
+version: '3'
+services:
+  xtasy-challenge:
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    container_name: xtasy
+    ports:
+      - 4869:4869
+    restart: unless-stopped
