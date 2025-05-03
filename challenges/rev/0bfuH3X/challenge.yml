@@ -1,0 +1,23 @@
+name: "0bfuH3X"
+author: "Ad3M"
+category: reverse
+description: |-
+    "This binary doesn’t want to be understood. Obfuscated logic and no helpful strings in sight.
+     Can you untangle the chaos and reveal the flag hidden deep within the code?"
+    
+
+     **author**: Ad3M
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{S0_Y0u_Ar3_Good_With_C#SHIT}
+#tags:
+#  - easy
+files:
+   - handout/0bfu_h3x.ExE
+state: visible
+version: "0.1"
