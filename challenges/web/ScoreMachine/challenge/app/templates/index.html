@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arcade Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  </head>
+
+  <body>
+    <div class="score-submit">
+      <h1>High Score Board</h1>
+      <p>Think you’ve got what it takes to top the leaderboard?</p>
+      <form action="{{ url_for('submit_score') }}" method="post">
+        <label for="score-entry">
+          <i class="fas fa-gamepad"></i>
+        </label>
+        <textarea id="score-entry" name="score-entry" placeholder="Enter your gamer name and score..."></textarea>
+        <input type="submit" value="Submit Score">
+      </form>
+    </div>
+  </body>
+</html>

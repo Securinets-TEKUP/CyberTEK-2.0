@@ -1,0 +1,21 @@
+name: "Coin Machine"
+author: "KonaN"
+category: web
+description: |-
+  SO Classic !
+
+  link : https://tekup-securinets.tech:5000
+  
+  **author**: KonaN
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{R_markd0wn_1s_s0_Unsecure_1t's_0nly_4_0ut_0f_10}LI}
+files:
+  - handout/app.rar
+state: visible
+version: "0.1"
