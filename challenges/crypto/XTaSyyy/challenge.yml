@@ -1,0 +1,21 @@
+name: "XTaSyyy"
+author: "Aptx"
+category: crypto
+description: |-
+  I see where things went wrong. It should be okay now.. right?
+
+  `nc 185.91.127.50 4870`
+
+  **author**: Aptx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{78785c1e71acce731b2d32d41abad8f70dd2d43dfd116a474d0ede33af3feb3f}
+files:
+   - handout/xtasyyy.py
+state: hidden
+version: "0.1"

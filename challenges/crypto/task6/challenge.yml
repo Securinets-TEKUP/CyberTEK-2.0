@@ -17,6 +17,6 @@ flags:
 #tags:
 #  - easy
 files:
-   - handout/BB84.py
+   - handout/BB84.yml
 state: visible
 version: "0.1"
