@@ -1,0 +1,22 @@
+name: "XTaSy"
+author: "Aptx"
+category: crypto
+description: |-
+  I heard that XTS is one of the strongest forms of AES encryption, even stronger than CBC.
+  I'm sure my token is safe now. Nothing to worry about.. right?
+
+  `nc <IP> <PORT>`
+
+  **author**: Aptx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{16cba8ed92f4fcca3e327af05d8026d858af1c8e425d9dea75bb5cf8acc2557d}
+files:
+   - handout/xtasy.py
+state: visible
+version: "0.1"
