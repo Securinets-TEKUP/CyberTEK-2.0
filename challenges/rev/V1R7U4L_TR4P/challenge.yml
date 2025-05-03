@@ -1,0 +1,23 @@
+name: "V1R7U4L_TR4P"
+author: "Ad3M"
+category: reverse
+description: |-
+    "This task designed to trap the unlucky reversers, Can you escape the virtual trap?
+	Flag format: Securinets{key}"
+    
+
+     **author**: Ad3M
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{X0r-It--S3cur1n3ts}
+#tags:
+#  - easy
+files:
+   - handout/V1R7U4L_TR4P.exe
+state: visible
+version: "0.1"

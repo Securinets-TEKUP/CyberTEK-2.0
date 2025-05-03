@@ -1,0 +1,23 @@
+name: "H4NDL3_TH1S"
+author: "Ad3M"
+category: reverse
+description: |-
+    "Find the correct decoded flag for my username : ad3m
+	Flag format: Securinets{sha1_of_the_decoded_flag}"
+    
+
+     **author**: Ad3M
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{aa7453ede59e1357d0dbf4c6ef8b71e79488c4b4}
+#tags:
+#  - easy
+files:
+   - handout/H4NDL3_TH1S.EXE
+state: visible
+version: "0.1"
