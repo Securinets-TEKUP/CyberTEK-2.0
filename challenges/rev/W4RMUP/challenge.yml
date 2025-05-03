@@ -3,10 +3,10 @@ author: "Ad3M"
 category: reverse
 description: |-
     "Reverse engineer it to uncover the hidden flag.
-	Flag format: Securinets{flag}"
+    Flag format: Securinets{flag}"
     
 
-     **author**: Ad3M
+    **author**: Ad3M
 value: 500
 type: dynamic
 extra:

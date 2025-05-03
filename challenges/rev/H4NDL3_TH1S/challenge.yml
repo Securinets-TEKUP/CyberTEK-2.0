@@ -2,11 +2,11 @@ name: "H4NDL3_TH1S"
 author: "Ad3M"
 category: reverse
 description: |-
-    "Find the correct decoded flag for my username : ad3m
-	Flag format: Securinets{sha1_of_the_decoded_flag}"
+  Find the correct decoded flag for my username : ad3m
+  Flag format: Securinets{sha1_of_the_decoded_flag}"
     
 
-     **author**: Ad3M
+  **author**: Ad3M
 value: 500
 type: dynamic
 extra:
