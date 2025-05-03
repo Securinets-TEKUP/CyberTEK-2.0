@@ -4,7 +4,7 @@ category: crypto
 description: |-
   We are thrilled to introduce the latest feature now available on Flipper Zero. Check it out!
 
-  `nc <IP> <PORT>`
+  `nc 185.91.127.50 4871`
 
   **author**: Aptx
 value: 500

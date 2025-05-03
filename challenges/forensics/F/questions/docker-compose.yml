@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: memory
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 1337 /home/ctf/launch.sh"
+    ports:
+      - "6720:1337"
+    read_only: true
+    command: timeout 60 nc -l -p 1337 -e bash /home/ctf/quest.sh

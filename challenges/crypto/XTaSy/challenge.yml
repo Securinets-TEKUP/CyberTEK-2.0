@@ -5,7 +5,7 @@ description: |-
   I heard that XTS is one of the strongest forms of AES encryption, even stronger than CBC.
   I'm sure my token is safe now. Nothing to worry about.. right?
 
-  `nc <IP> <PORT>`
+  `nc 185.91.127.50 4869`
 
   **author**: Aptx
 value: 500

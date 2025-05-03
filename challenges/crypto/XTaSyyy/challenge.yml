@@ -4,7 +4,7 @@ category: crypto
 description: |-
   I see where things went wrong. It should be okay now.. right?
 
-  `nc <IP> <PORT>`
+  `nc 185.91.127.50 4870`
 
   **author**: Aptx
 value: 500
