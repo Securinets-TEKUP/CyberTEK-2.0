@@ -1,0 +1,23 @@
+name: "triip"
+author: "l3oth"
+category: misc
+description: |-
+ scan it
+
+
+
+ **author**:l3oth
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  Securinets{Y0u_4re_in_QR-cOd3_tr4Um4}
+#tags:
+#  - easy
+files:
+ - handout/qr.png
+state: visible
+version: "0.1"
