@@ -9,9 +9,9 @@ description: |-
 value: 500
 type: dynamic
 extra:
-  initial: 500
+  initial: 200
   decay: 20
-  minimum: 10
+  minimum: 50
 flags:
   - Securinets{diff1cult_rsa_1s_e@sy_xxxxxxxxxxxxxxxxxx}
 #tags:
