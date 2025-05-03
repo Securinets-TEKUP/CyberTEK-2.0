@@ -5,7 +5,7 @@ from time import sleep
 context.arch = "amd64"
 exe = ELF("./patched_main")
 libc = exe.libc
-host, port = "localhost", 12005 
+host, port = "185.91.127.50", 12005
 if args.REMOTE:
     p = remote(host,port)
 elif args.GDB:
