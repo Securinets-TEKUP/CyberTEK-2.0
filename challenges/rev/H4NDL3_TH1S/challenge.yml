@@ -3,7 +3,7 @@ author: "Ad3M"
 category: reverse
 description: |-
   Find the correct decoded flag for my username : ad3m
-  Flag format: Securinets{sha1_of_the_decoded_flag}"
+  Flag format: Securinets{sha1_of_the_decoded_flag}
     
 
   **author**: Ad3M
