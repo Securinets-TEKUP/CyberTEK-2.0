@@ -1,0 +1,21 @@
+name: "misty"
+author: "chxmxii"
+category: Misc
+description: |-
+  some dev thought `.pem` stood for please expose me.
+  
+  **author**: "chxmxii"
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - securinets{f8ab6145079417d52bf8c0966b9d4bc122a71542b4320e9d30122125e1e09a91}
+tags:
+ - cloud
+files:
+  - handout/challenge.zip
+state: visible
+version: "0.1"

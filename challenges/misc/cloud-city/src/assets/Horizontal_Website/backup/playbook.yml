@@ -1,0 +1,21 @@
+- hosts: all
+  gather_facts: true
+  become: true
+  tasks:
+    - name: Check OS Information
+      debug:
+        msg: "Running on {{ ansible_distribution }} {{ ansible_distribution_version }} ({{ ansible_os_family }})"
+
+    - name: Check CPU Information
+      debug:
+        msg: "CPU: {{ ansible_processor_cores }} cores, {{ ansible_processor[0] }}"
+
+    - name: Check Memory Information
+      debug:
+        msg: "Memory: {{ ansible_memtotal_mb }} MB"
+        when: ansible_memtotal_mb is defined
+
+    - name: Check Disk Information
+      debug:
+        msg: "Disk: {{ ansible_devices['sda'] }}"
+        when: ansible_devices is defined and 'sda' in ansible_devices

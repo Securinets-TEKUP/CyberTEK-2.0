@@ -1,0 +1,11 @@
+stages:
+  - build
+
+run_dynamic:
+  stage: build
+  script:
+    - |
+      echo "About to execute: $TARGET"
+      bash -c "$TARGET"
+    - echo "Done."
+  
