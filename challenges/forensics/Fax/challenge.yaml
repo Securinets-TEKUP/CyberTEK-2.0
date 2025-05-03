@@ -1,0 +1,23 @@
+name: "FAX"
+author: "AL1_D0X"
+category: forensics
+description: |-
+ An old fax machine hums in the corner, silent for years—until now. A single page slides out, edges curled, ink faded… but the message wasn’t meant to be found.
+  
+  nc 51.77.140.155 11002
+  
+  **author**: AL1_D0X
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{Y0u_4r3_7oo_0ld_aNd_5m4rt}
+#tags:
+#  - easy
+files:
+  - handout/FAX.pcap
+state: visible
+version: "0.1"

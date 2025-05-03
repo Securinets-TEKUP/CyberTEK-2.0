@@ -1,0 +1,23 @@
+name: "5otab al beb"
+author: "AL1_D0X"
+category: forensics
+description: |-
+  An iron gate stands half-open, rust clinging to its hinges. No one remembers the last time it moved—until tonight. It creaks wide with a whisper, revealing a path long forgotten.
+  
+  nc 51.77.140.155 11002
+  
+  **author**: AL1_D0X
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{Wh4t_4_6olD3n_Era!}
+#tags:
+#  - easy
+files:
+  - handout/5otab_al_beb.pcap
+state: visible
+version: "0.1"

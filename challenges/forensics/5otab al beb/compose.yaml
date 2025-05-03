@@ -1,0 +1,9 @@
+version: '3'
+services:
+  challenge:
+    container_name: 5otab_al_beb
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - 11002:11002
