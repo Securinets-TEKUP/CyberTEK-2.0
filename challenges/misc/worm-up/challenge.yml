@@ -1,0 +1,22 @@
+name: "worm-up"
+author: "Akolix"
+category: misc
+description: |-
+  A secret broadcast was intercepted, but something is not right.
+  Bites of information are split up and shared among different protocols, and some only in specific situations.
+
+  **author**: Akolix
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{Quantum_Streams}
+#tags:
+#  - easy
+#files:
+#  - handout/capture.pcapng
+state: visible
+version: "0.1"
