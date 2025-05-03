@@ -9,6 +9,7 @@ RUN useradd -m ctf
 WORKDIR /home/ctf
 
 COPY main /home/ctf/main
+COPY main.c /home/ctf/main.c
 COPY flag.txt /home/ctf/flag.txt
 
 RUN chmod +x /home/ctf/main && chmod 444 /home/ctf/flag.txt

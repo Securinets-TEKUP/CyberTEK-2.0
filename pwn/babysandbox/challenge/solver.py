@@ -7,7 +7,7 @@ from time import sleep
 context.arch = "amd64"
 exe = ELF("./main")
 libc = exe.libc
-host, port = "localhost", 12002 
+host, port = "185.91.127.50", 12002 
 if args.REMOTE:
     p = remote(host,port)
 elif args.GDB:

