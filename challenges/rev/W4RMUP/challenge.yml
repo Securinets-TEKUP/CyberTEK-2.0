@@ -1,0 +1,23 @@
+name: "W4RMUP"
+author: "Ad3M"
+category: reverse
+description: |-
+    "Reverse engineer it to uncover the hidden flag.
+	Flag format: Securinets{flag}"
+    
+
+     **author**: Ad3M
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{C179C1D91B7F18337F3C9FC2D1629BDA}
+#tags:
+#  - easy
+files:
+   - handout/Warmup.exe
+state: visible
+version: "0.1"
