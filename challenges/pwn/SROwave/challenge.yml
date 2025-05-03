@@ -2,9 +2,9 @@ name: "SROwave"
 author: "BALD"
 category: pwn
 description: |-
-  a special retrowave 
+  a special retrowave
 
-  nc 51.77.140.155 10002
+  nc 185.91.127.50 12011
 
   **author**: BALD
 value: 500

@@ -4,7 +4,7 @@ category: pwn
 description: |-
   Hee Hee
 
-  nc 51.77.140.155 10002
+  nc 185.91.127.50 12010
 
   **author**: BALD
 value: 500

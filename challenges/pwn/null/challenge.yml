@@ -3,7 +3,7 @@ author: "hyzr"
 category: pwn
 description: |-
   You sealed every gate, but the smallest gap you missed is what hunts you in the end
-  nc 51.77.140.155 12005
+  nc 185.91.127.50 12005
   **author**: hyzr
 value: 500
 type: dynamic

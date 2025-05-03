@@ -3,7 +3,7 @@ author: "hyzr"
 category: pwn
 description: |-
   Baby sandbox. Big regrets
-  nc 51.77.140.155 12002
+  nc 185.91.127.50 12002
   **author**: hyzr
 value: 500
 type: dynamic
