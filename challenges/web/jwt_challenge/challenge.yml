@@ -1,0 +1,23 @@
+name: "Arcade"
+author: "xhalyl and Konan"
+category: web
+description: |-
+  Lets play some games!
+
+  Link : https://arcade.tekup-securinets.tech
+
+  **author**: "xhalyl and KonaN"
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{ALI_NOT_LIL_WAYNE}
+#tags:
+#  - easy
+files:
+  - handout/challenge.zip
+state: visible
+version: "0.1"

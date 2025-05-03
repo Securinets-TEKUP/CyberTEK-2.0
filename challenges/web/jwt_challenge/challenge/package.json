@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.2.0",
+    "node-jose": "^2.2.0",
+    "sqlite3": "^5.1.7"
+  }
+}

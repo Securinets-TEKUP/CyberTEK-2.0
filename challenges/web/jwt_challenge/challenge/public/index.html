@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoArcade</title>
+  <style>
+    body {
+      background: black;
+      color: lime;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: radial-gradient(circle at center, #000 0%, #111 100%);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      animation: glow 1.5s infinite alternate;
+      text-shadow: 0 0 10px lime, 0 0 20px lime;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+    }
+
+    a.button {
+      padding: 15px 30px;
+      background-color: lime;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid lime;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: black;
+      color: lime;
+      box-shadow: 0 0 10px lime;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px lime, 0 0 10px lime;
+      }
+      to {
+        text-shadow: 0 0 20px lime, 0 0 30px lime;
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: #0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🕹️ Welcome to NeoArcade</h1>
+  <p>Enter the digital battleground. Choose your path:</p>
+  <div class="buttons">
+    <a class="button" href="/login.html">Login</a>
+    <a class="button" href="/register.html">Register</a>
+  </div>
+  <footer>© 199X NeoArcade Inc.</footer>
+</body>
+</html>

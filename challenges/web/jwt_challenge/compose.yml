@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web_retro:
+    build:
+      context: challenge
+      dockerfile: Dockerfile
+    ports:
+      - "7778:3000"
+    restart: always

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NeoArcade</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 40px;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .box {
+      margin: 20px auto;
+      width: 300px;
+      padding: 20px;
+      border: 2px solid lime;
+    }
+    input[type="text"], input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      background-color: black;
+      border: 2px solid lime;
+      color: lime;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: lime;
+      color: black;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>💥 NEO ARCADE - LOGIN 💥</h1>
+  <div class="box">
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Player Name" required /><br><br>
+      <input type="password" name="password" placeholder="Secret Code" required /><br><br>
+      <button type="submit">Enter the Game</button>
+    </form>
+  </div>
+  <footer>
+    <p>🚀 90s Arcade Theme - Login to Continue</p>
+  </footer>
+</body>
+</html>
