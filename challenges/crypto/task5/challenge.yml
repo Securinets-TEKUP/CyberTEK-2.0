@@ -6,12 +6,12 @@ description: |-
     
 
      **author**: Mrx0rd
-value: 500
+value: 200
 type: dynamic
 extra:
-  initial: 500
+  initial: 200
   decay: 20
-  minimum: 10
+  minimum: 50
 flags:
   - Securinets{n0_m0r3_m4th_plz_just_g1v3_m3_th3_fl4g}
 #tags:

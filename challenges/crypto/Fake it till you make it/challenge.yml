@@ -1,0 +1,22 @@
+name: "Fake it till you make it"
+author: "Gremlin"
+category: Crypto
+description: |-
+  Our inteligence team concluded that right before sending a very important message, the connection between the talking parties was interrupted.
+  You, having faked your skills and your job interview, are now tasked by your suspicious mentor to figure out this very imoportant message.
+
+  **author**: GremlinBoi
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{693dd572134e126be0a2a6465668555f72e09760d49971887371d5f832bfdcf8}
+#tags:
+#  - Medium
+files:
+  - handout/crypto_messenger.zip
+state: visible
+version: "0.1"

@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  chip8-ctf:
+    build: .
+    image: chiprevenge-ctf
+    container_name: chip8revenge-ctf
+    ports:
+      - "6010:9999"
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE
+    stdin_open: true
+    tty: true
+ 
+  

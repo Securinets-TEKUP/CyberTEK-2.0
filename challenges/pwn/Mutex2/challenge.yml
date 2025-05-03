@@ -1,0 +1,38 @@
+# Required sections
+#
+name: "Xetum"
+author: "raoufard"
+# Challenge category (pwn, web, reverse, crypto, forensics, linux, programming, misc)
+category: pwn
+description: |
+  > Threads intertwined, messages locked away...  
+  > But timing is everything, and locks can be picked.  
+
+  **Author** : raoufard
+flags:
+  - Securinets{Mut1x_4re_N0t_Th4t_Br0k1n}
+
+
+
+# Optional settings
+
+# connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
+connection_info: nc 185.91.127.50 12020
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+files:
+  - ./challenge/mutex_server
+  
+
+# DO NOT CHANGE
+#
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+state: visible
+version: "0.1"

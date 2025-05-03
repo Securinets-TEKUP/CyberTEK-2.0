@@ -1,0 +1,28 @@
+name: "8SoundsJillyBack"
+author: "raoufard"
+category: pwn
+difficulty: hard
+description: |
+  > Nah i think it was easy to find the flag, You made me cry
+  > I am not a good player, after all Now it 's your turn to cry
+  > Connect and send your crafted file!
+
+  **Author** : raoufard
+
+flags:
+  - Securinets{We_8bit_sounds_machine_is_awesome_but_You_M1de_Me_Cry}
+
+
+connection_info: nc 185.91.127.50 12022
+
+files:
+  - challenge/Jilly8
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+state: visible
+version: "0.1"

@@ -1,0 +1,24 @@
+name: "Skill Issue 1"
+author: "Gremlin"
+category: Crypto
+description: |-
+  Damn this ssh got hands.
+
+  You are tasked to find the flags. Your mission should you choose to accept it..
+  Flag1: DH key exchange shared secret (wrap in Securinets{})
+
+
+  **author**: GremlinBoi
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{4C640117C50E39C7F5D04BA07D221FDD70366B6B716F7770}
+
+files:
+  - handout/crypto_skill-issue1.zip
+state: visible
+version: "0.1"

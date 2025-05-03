@@ -1,0 +1,24 @@
+name: "Skill Issue 2"
+author: "Gremlin"
+category: Crypto
+description: |-
+  Damn this ssh got hands.
+
+  You are tasked to find the flags. Your mission should you choose to accept it..
+  Flag2: Hash/Session_ID (wrap in Securinets{})
+
+
+  **author**: GremlinBoi
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{0659032c1bd708e7a532c358c61f11bb5e80cc4c}
+
+files:
+  - handout/crypto_skill-issue2.zip
+state: visible
+version: "0.1"

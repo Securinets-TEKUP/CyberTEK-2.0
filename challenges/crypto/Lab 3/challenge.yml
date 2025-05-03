@@ -1,0 +1,21 @@
+name: "Lab 3"
+author: "Gremlin"
+category: Crypto
+description: |-
+  We can do as many times as required.. JEYEK JEYEK 
+
+  **author**: GremlinBoi
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{c962b76aa8a4231681191416888155d8f0210238}
+#tags:
+#  - Medium
+files:
+  - handout/crypto_lab3.zip
+state: visible
+version: "0.1"

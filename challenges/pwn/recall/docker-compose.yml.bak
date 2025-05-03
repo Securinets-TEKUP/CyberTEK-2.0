@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pwn_challenge:
+    build: .
+    container_name: recall
+    ports:
+      - "6004:6004"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

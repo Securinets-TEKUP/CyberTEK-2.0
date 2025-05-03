@@ -6,7 +6,7 @@ description: |-
     
 
      **author**: Mrx0rd
-value: 500
+value: 200
 type: dynamic
 extra:
   initial: 200

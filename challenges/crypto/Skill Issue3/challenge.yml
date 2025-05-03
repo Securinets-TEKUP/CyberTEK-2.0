@@ -1,0 +1,24 @@
+name: "Skill Issue 3"
+author: "Gremlin"
+category: Crypto
+description: |-
+  Damn this ssh got hands.
+
+  You are tasked to find the flags. Your mission should you choose to accept it..
+  Flag3: file contents sent over scp
+
+
+  **author**: GremlinBoi
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{f35b77949e7c0383d0273b3e6781c2f577502c739c19b0ab1374d65366f9e192}
+
+files:
+  - handout/crypto_skill-issue3.zip
+state: visible
+version: "0.1"

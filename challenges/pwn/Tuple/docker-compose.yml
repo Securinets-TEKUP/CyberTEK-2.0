@@ -1,0 +1,11 @@
+
+services:
+  tuple-challenge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tuple-container
+    ports:
+      - "6003:5000"
+    restart: unless-stopped
+  

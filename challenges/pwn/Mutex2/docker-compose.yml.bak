@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  mutex-challenge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mutex-challenge
+    ports:
+      - "6002:6002"
+    restart: unless-stopped
+    # Set resource limits to prevent DoS
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 256M
+        reservations:
+          memory: 128M
+    # Add health check
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "6002"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

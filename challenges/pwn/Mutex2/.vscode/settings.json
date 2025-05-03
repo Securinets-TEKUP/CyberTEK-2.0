@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "remote_mutex_server.C": "cpp",
+        "signal.h": "c",
+        "mutex_server.C": "cpp"
+    }
+}

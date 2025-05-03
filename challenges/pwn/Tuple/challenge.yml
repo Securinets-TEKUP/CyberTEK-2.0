@@ -1,0 +1,24 @@
+name: "Tuple"
+author: "raoufard"
+category: pwn
+description: |
+  > Connect to the service, exploit the tuple madness, and claim your flag.
+
+  **Author** : raoufard
+
+flags:
+  - Securinets{y0u_tupl3d_it_r1ght}
+
+connection_info: nc 185.91.127.50 12025 
+
+files:
+  - ./challenge/chal.py
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+state: visible
+version: "0.1"
