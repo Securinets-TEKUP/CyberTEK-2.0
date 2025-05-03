@@ -18,5 +18,5 @@ tags:
 files:
   - handout/main
   - handout/libc-2.27.so
-  - handbout/ld-2.27.so
+  - handout/ld-2.27.so
 state: visible

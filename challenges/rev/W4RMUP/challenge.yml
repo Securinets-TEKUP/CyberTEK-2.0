@@ -2,8 +2,8 @@ name: "W4RMUP"
 author: "Ad3M"
 category: reverse
 description: |-
-    "Reverse engineer it to uncover the hidden flag.
-    Flag format: Securinets{flag}"
+    Reverse engineer it to uncover the hidden flag.
+    Flag format: Securinets{flag}
     
 
     **author**: Ad3M
