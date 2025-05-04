@@ -1,0 +1,21 @@
+name: "TheROBOT"
+author: "HAMZAOUI"
+category: hardware
+description: |-
+  i'm obsessed with radio signals and controlling things !!
+  
+  **author**: HAMZAOUI
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{1393Nd@RY}
+#tags:
+#  - easy
+files:
+  - handout/where.lac
+state: visible
+version: "0.1"
