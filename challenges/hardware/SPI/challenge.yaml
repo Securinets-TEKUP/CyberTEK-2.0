@@ -1,0 +1,21 @@
+name: "SPI"
+author: "HAMZAOUI"
+category: hardware
+description: |-
+  A perfect square holds the key — but only its root reveals the truth.
+  (truth (sub(root)+2)) = heaven 
+  **author**: HAMZAOUI
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{CHip_NOT_Ch3@P}
+#tags:
+#  - easy
+files:
+  - 
+state: visible
+version: "0.1"

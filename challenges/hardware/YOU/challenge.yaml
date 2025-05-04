@@ -1,0 +1,21 @@
+name: "YOU"
+author: "HAMZAOUI"
+category: hardware
+description: |-
+  no hint !!
+  
+  **author**: HAMZAOUI
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - Securinets{U4R7_10v3R}
+#tags:
+#  - easy
+files:
+  - handout/try.lac
+state: visible
+version: "0.1"
