@@ -1,0 +1,17 @@
+- id: 001
+  name: Rusty Sword
+  type: Weapon
+  rarity: Common
+  quantity: 1
+
+- id: 002
+  name: Healing Potion
+  type: Consumable
+  rarity: Uncommon
+  quantity: 3
+
+- id: 003
+  name: Silver Key
+  type: Quest Item
+  rarity: Rare
+  quantity: 1
